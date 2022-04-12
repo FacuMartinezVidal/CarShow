@@ -28,7 +28,12 @@ body{
 .item_1{
     height: 226px;
     width: 337px;
+    transition: all 1s;
     
+}
+.item_1:hover{
+    height: 336px;
+    width: 437px;
 }
 .item_1 img{
     width: 100%;
@@ -54,6 +59,12 @@ body{
     border-radius: 10px;
     height: 300px;
     width: 400px;
+    transition: all 1s;
+
+}
+.item_2:hover iframe{
+    height: 500px;
+    width: 600px;
 
 }
 .item_2 p{
@@ -74,7 +85,12 @@ body{
 .item_3 iframe{
     height: 700px;
     width: 500px;
+    transition: all 1s;
 
+}
+.item_3:hover iframe{
+    height: 900px;
+    width: 700px;
 }
 .grupo{
     margin-top: 50px;
