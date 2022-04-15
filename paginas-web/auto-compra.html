@@ -4,90 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compramos tu auto</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Concesionario de autos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a href="../index.html"><h1 class="menu_logo">CarShow</h1></a>
-                    <ul class="menu_items">
-                        <li><a href="./auto-compra.html">Compra tu auto</a></li>
-                        <li><a href="./auto-venta.html">Vende tu auto</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                        <li><a href="./mi-cuenta.html">Mi cuenta</a></li>
-                    </ul>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark nav_bar" >
+            <div class="container-fluid" style="gap: 50px;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">CarShow</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="gap: 1px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas-web/auto-compra.html">Compra un auto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Vende tu auto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Mi cuenta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                  </li>
+          
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
-    <section class="grupo">
-        <div class="item">
-            <img src="../images/m3.jpg" alt="">
-            <h3>BMW M3 3.0 431cv</h3>
-            <p>2020 - 60.000km - San Telmo</p>
-            <h2> U$S 30.000</h2>
+    <section class="container">
+        <div class="row row-cols-2 gap-4">
+            <div class="card col">
+                <img src="../images/m3.jpg" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">BMW M3 2018 - $40.000</h5>
+                  <ul>
+                      <li><p class="card-text">Modelo: Sport Evolution</p></li>
+                      <li><p class="card-text">0 km</p></li>
+                      <li><p class="card-text">Nuevo</p></li>
+                      <li><p class="card-text">San Telmo - Capital Federal</p></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="../images/370z.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Nissan 370z - $40.000</h5>
+                  <ul>
+                      <li><p class="card-text">Modelo: 2018</p></li>
+                      <li><p class="card-text">3.000km</p></li>
+                      <li><p class="card-text">Usado</p></li>
+                      <li><p class="card-text">San Telmo - Capital Federal</p></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="../images/r8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Audi R8 2017 - $70.000</h5>
+                  <ul>
+                      <li><p class="card-text">Modelo: RWS S tronic</p></li>
+                      <li><p class="card-text">5.000km</p></li>
+                      <li><p class="card-text">Usado</p></li>
+                      <li><p class="card-text">Boedo - Capital Federal</p></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+            <div class="card col">
+                <img src="../images/raptor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Ford Raptor 2016 - $90.000</h5>
+                  <ul>
+                      <li><p class="card-text">Modelo: Ranger</p></li>
+                      <li><p class="card-text">20.000km</p></li>
+                      <li><p class="card-text">Usado</p></li>
+                      <li><p class="card-text">Belgrano - Capital Federal</p></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Comprar ahora</a>
+                </div>
+            </div>
+
         </div>
-        <div class="item">
-            <img src="../images/raptor.jpg" alt="">
-            <h3>Ford Raptor 3.5 bi-turbo</h3>
-            <p>2019 - 20.000km - San Telmo</p>
-            <h2> U$S 90.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/86.jpg" alt="">
-            <h3>Toyota 89 2.0 ft mt</h3>
-            <p>2013 - 14.000km - Belgrano</p>
-            <h2> U$S 22.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/812.jpg" alt="">
-            <h3>Ferrari 812 Superfast V6 400cv</h3>
-            <p>2011- 36.000km - Belgrano</p>
-            <h2>U$S 800.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/gtr.jpg" alt="">
-            <h3>Nissan GTR V8 632cv </h3>
-            <p>2010 - 8.000km - Boedo</p>
-            <h2> U$S 50.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/r8.jpg" alt="">
-            <h3>Audi R8 5.2 fsi 525cv</h3>
-            <p>2014 - 3.000km - Boedo</p>
-            <h2> U$S 250.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/camaro.jpg" alt="">
-            <h3>Chevrolet Camaro 6.2ss V8</h3>
-            <p>2018 - 60.000km - Palermo</p>
-            <h2> U$S 80.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/mustang.jpg" alt="">
-            <h3>Ford Mustang 5.0 Gt 421cv</h3>
-            <p>2017 - 33.000km - Palermo/p>
-            <h2> U$S 70.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/amg.jpg" alt="">
-            <h3>Mercedes-Benz GTR V8 585cv</h3>
-            <p>2020 - 1000km - Palermo</p>
-            <h2> U$S 400.000</h2>
-        </div>
-        <div class="item">
-            <img src="../images/rcz.jpeg" alt="">
-            <h3>Peugeot RCZ 1.6 200cv</h3>
-            <p>2009 - 2.500km - Palermo</p>
-            <h2> U$S 30.000</h2>
-        </div>
-        
     </section>
+    
+    
     <footer class="footer">
-        <h1 class="footer_logo">CarShow</h1>
+        <h2 class="footer_logo">CarShow</h2>
         <div class="footer_items">
             <p>(+54)1166660428</p>
             <a href="https://www.instagram.com" target="blank"><img src="../images/ins.png"></a>
@@ -95,9 +119,8 @@
             <a href="http://www.facebook.com" target="_blank" ><img src="../images/fb.svg"></a>
             <a href="http://www.linkedin.com" target="_blank"><img src="../images/in.png"></a>
         </div>
-
     </footer>
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -14,7 +14,8 @@ body{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    margin-top:50px;
+    margin-top:80px;
+    margin-bottom: 40px;
 }
 
 .articulo_seccion1{
@@ -93,19 +94,14 @@ body{
     width: 700px;
 }
 .grupo{
-    margin-top: 50px;
-    margin-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
     justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 150px;
-}
+    align-items: center;
 
+}
 .item{
     height: 280px;
-    width: 300Px;
+    width: 500px;
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
     border: 2px solid rgb(156, 156, 156);
     border-bottom-left-radius:  10px;
