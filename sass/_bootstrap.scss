@@ -1,0 +1,28 @@
+
+@import "vars";
+
+.nav_bar{
+    background:linear-gradient(to left, $colorPrincipal, rgb(78, 32, 32))
+
+}
+.navbar-brand{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+.navbar-nav{
+    gap: 30px;
+}
+.btn{
+    color: aliceblue;
+    border: 1px solid white;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+.mb-4 img{
+    width: 40px;
+    height: 40px;
+    gap: 10px;
+}

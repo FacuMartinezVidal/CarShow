@@ -1,0 +1,132 @@
+.nav_bar {
+  background: -webkit-gradient(linear, right top, left top, from(#e9183b), to(#4e2020));
+  background: linear-gradient(to left, #e9183b, #4e2020);
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+.btn {
+  color: aliceblue;
+  border: 1px solid white;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.mb-4 img {
+  width: 40px;
+  height: 40px;
+  gap: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body .content h2 {
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+body .content .article1 {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+body .content .article1__item {
+  height: 226px;
+  width: 337px;
+}
+
+body .content .article1__item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+body .content .article1__item p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: solid;
+}
+
+body .content .article2 {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 120px;
+}
+
+body .content .article2__item iframe {
+  border-radius: 10px;
+  height: 300px;
+  width: 400px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .content .article2__item iframe:hover {
+  height: 400px;
+  width: 500px;
+}
+
+body .content .article2__item p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: solid;
+}
+
+body .content .article3 {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 300px;
+}
+
+body .content .article3__item iframe {
+  height: 600px;
+  width: 400px;
+  border: 3px solid black;
+  -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+body .content .article3__item iframe:hover {
+  height: 800px;
+  width: 700px;
+}
