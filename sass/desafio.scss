@@ -2,9 +2,9 @@
 @import "bootstrap";
 
 $mapa-colores:(
-    rojo:$colorPrincipal
-    rojo-oscuro:$colorSecundario
-    negro:$colorTitulos
+    rojo:$colorPrincipal,
+    rojoOscuro:$colorSecundario,
+    negro:$colorTitulos,
     fondo:$colorFondo
 );
 
@@ -15,7 +15,7 @@ $mapa-colores:(
 }
 
 .nav_bar{
-    background:linear-gradient(to left, map-get($map: $mapaColores, $key:rojo ),map-get($map: $mapaColores, $key:rojo-oscuro ))
+    background:linear-gradient(to left, map-get($map: $mapa-colores, $key:rojo ),map-get($map: $mapa-colores, $key:rojoOscuro ))
 
 }
 
@@ -23,7 +23,7 @@ body{
     font-family: $fuentePrincipal;
     .content{
         h2{
-            color:map-get($map: $mapaColores, $key:negro );
+            color:map-get($map:$mapa-colores , $key:negro );
             font-size: 25px;
             font-weight: bold;
             text-align: center;

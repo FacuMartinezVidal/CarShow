@@ -1,8 +1,3 @@
-.nav_bar {
-  background: -webkit-gradient(linear, right top, left top, from(#e9183b), to(#4e2020));
-  background: linear-gradient(to left, #e9183b, #4e2020);
-}
-
 .navbar-brand {
   font-size: 2rem;
   margin-left: 20px;
@@ -27,12 +22,17 @@
   gap: 10px;
 }
 
+.nav_bar {
+  background: -webkit-gradient(linear, right top, left top, from(#e9183b), to(#4e2020));
+  background: linear-gradient(to left, #e9183b, #4e2020);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
 
 body .content h2 {
-  color: #000000;
+  color: #0c0b0b;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
