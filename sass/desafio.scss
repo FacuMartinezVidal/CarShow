@@ -1,11 +1,29 @@
 @import "vars";
 @import "bootstrap";
 
+$mapa-colores:(
+    rojo:$colorPrincipal
+    rojo-oscuro:$colorSecundario
+    negro:$colorTitulos
+    fondo:$colorFondo
+);
+
+@mixin flex {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_bar{
+    background:linear-gradient(to left, map-get($map: $mapaColores, $key:rojo ),map-get($map: $mapaColores, $key:rojo-oscuro ))
+
+}
+
 body{
     font-family: $fuentePrincipal;
     .content{
         h2{
-            color: #000000;
+            color:map-get($map: $mapaColores, $key:negro );
             font-size: 25px;
             font-weight: bold;
             text-align: center;
@@ -13,9 +31,7 @@ body{
             margin-bottom: 40px;
         }
         .article1{
-            margin-top: 80px;
-            display: flex;
-            flex-wrap: wrap;
+            @include flex;
             gap: 50px;
             justify-content: space-around;
             margin-bottom: 120px;
@@ -36,9 +52,7 @@ body{
             }
         }
         .article2{
-            margin-top: 80px;
-            display: flex;
-            flex-wrap: wrap;
+            @include flex;
             gap: 10px;
             justify-content: space-around;
             margin-bottom: 120px;
@@ -62,9 +76,7 @@ body{
             }
         }
         .article3{
-            margin-top: 80px;
-            display: flex;
-            flex-wrap: wrap;
+            @include flex;
             gap: 20px;
             justify-content: space-around;
             margin-bottom: 300px;
