@@ -204,6 +204,9 @@ body{
             margin-top: 10px;
             margin-left: 10px;
         }
+        p{
+            margin-left: 10px;
+        }
         img{
             height: 200px;
             width: 200px;
@@ -237,66 +240,95 @@ body{
 }
 
 @media screen and (max-width:450px ){
-    .grupo{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px 50px;
-        justify-content: center;
-        .item{
-            margin-top: 100px;
-            height: 250px;
+    body{
+        .content{ 
+            .article1{
+                @include flex;
+                gap: 50px;
+                justify-content: space-around;
+                margin-bottom: 120px;
+                &__item{
+                    width: 300px;
+                }
+            }
+            .article2{
+                &__item{
+                    iframe{
+                        width: 300px;
+                    }
+                }
+            }
+            .article3{
+                gap: 50px;
+                &__item{
+                    iframe{
+                        height: 600px;
+                        width: 270px;
+                    }
+                }
+    
+            }
+        }
+        .grupo{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 50px;
+            justify-content: center;
+            .item{
+                margin-top: 100px;
+                height: 340px;
+                width: 310px;
+                box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+                border: 2px solid rgb(156, 156, 156);
+                border-bottom-left-radius:  10px;
+                border-bottom-right-radius: 10px ;
+            }
+        }
+        .log{
+            font-family: 'Open Sans', sans-serif;
             width: 300px;
-            box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
-            border: 2px solid rgb(156, 156, 156);
-            border-bottom-left-radius:  10px;
-            border-bottom-right-radius: 10px ;
+            background-color: #e9183b;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            color: #ffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 80px;
+            gap: 20px;
+        }
+        .nos img{
+            width: 200px;
+            margin-top: 20px;
+            margin-left: 15px;
+            margin-bottom: 20px;
+        }
+        .nos h1{
+            font-size: 30px;
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+        .nos article{
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-left:10px;
+            margin-bottom: 10px;
+        }
+        .form{
+            font-family: 'Open Sans', sans-serif;
+            width: 300px;
+            background-color: #e9183b;
+            padding: 30px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 4px;
+            color: #ffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 80px;
         }
     }
-    .log{
-        font-family: 'Open Sans', sans-serif;
-        width: 300px;
-        background-color: #e9183b;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        color: #ffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 80px;
-        gap: 20px;
-    }
-    .nos img{
-        width: 200px;
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-bottom: 20px;
-    }
-    .nos h1{
-        font-size: 30px;
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    .nos article{
-        margin-right: 10px;
-        margin-top: 10px;
-        margin-left:10px;
-        margin-bottom: 10px;
-    }
-    .form{
-        font-family: 'Open Sans', sans-serif;
-        width: 300px;
-        background-color: #e9183b;
-        padding: 30px;
-        margin: auto;
-        margin-top: 100px;
-        border-radius: 4px;
-        color: #ffff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 80px;
-    }
-    
 }

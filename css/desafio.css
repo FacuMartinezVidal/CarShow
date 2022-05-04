@@ -282,6 +282,10 @@ body .log h4 {
   margin-left: 10px;
 }
 
+body .log p {
+  margin-left: 10px;
+}
+
 body .log img {
   height: 200px;
   width: 200px;
@@ -320,7 +324,32 @@ body .nos img {
 }
 
 @media screen and (max-width: 450px) {
-  .grupo {
+  body .content .article1 {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 50px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 120px;
+  }
+  body .content .article1__item {
+    width: 300px;
+  }
+  body .content .article2__item iframe {
+    width: 300px;
+  }
+  body .content .article3 {
+    gap: 50px;
+  }
+  body .content .article3__item iframe {
+    height: 600px;
+    width: 270px;
+  }
+  body .grupo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,17 +360,17 @@ body .nos img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .grupo .item {
+  body .grupo .item {
     margin-top: 100px;
-    height: 250px;
-    width: 300px;
+    height: 340px;
+    width: 310px;
     -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
             box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
     border: 2px solid #9c9c9c;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  .log {
+  body .log {
     font-family: 'Open Sans', sans-serif;
     width: 300px;
     background-color: #e9183b;
@@ -363,24 +392,24 @@ body .nos img {
     margin-bottom: 80px;
     gap: 20px;
   }
-  .nos img {
+  body .nos img {
     width: 200px;
     margin-top: 20px;
     margin-left: 15px;
     margin-bottom: 20px;
   }
-  .nos h1 {
+  body .nos h1 {
     font-size: 30px;
     margin-top: 40px;
     margin-left: 20px;
   }
-  .nos article {
+  body .nos article {
     margin-right: 10px;
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
   }
-  .form {
+  body .form {
     font-family: 'Open Sans', sans-serif;
     width: 300px;
     background-color: #e9183b;
