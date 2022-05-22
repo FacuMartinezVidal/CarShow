@@ -16,6 +16,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="../css/desafio.css">
+    <link rel="icon" href="../images/icon.ico">
 
 </head>
 <body>
@@ -58,71 +59,74 @@
     </header>
     <section class="form">
         <h1>Publica tu auto</h1>
-        <div class="auto">
-            <h2> Detalles del automovil</h2>
-            <select name="marca" id="marca" class="controls">
-                <option value="0">Seleccione la marca del automovil</option>
-                <option value="1">Audi</option>
-                <option value="2">Alfa Romeo</option>
-                <option value="3">BMW</option>
-                <option value="4">Chevrolet</option>
-                <option value="5">Citroen</option>
-                <option value="6">Fiat</option>
-                <option value="7">Ford</option>
-                <option value="8">Honda</option>
-                <option value="9">Hyundai</option>
-                <option value="10">Jeep</option>
-                <option value="11">Kia</option>
-                <option value="12">Mini Cooper</option>
-                <option value="13">Mitsubishi</option>
-                <option value="14">Nissan</option>
-                <option value="15">Peugeot</option>
-                <option value="16">RAM</option>
-                <option value="17">Renault</option>
-                <option value="18">Smart</option>
-                <option value="19">Suzuki</option>
-                <option value="20">Toyota</option>
-                <option value="21">Volkswagen</option>
-                <option value="22">Volvo</option>
-            </select>
-            <input class="controls" type="text" id="modelo" placeholder="Modelo del automovil">
-            <input class="controls" type="text" id="año" placeholder="Año de fabricacion">
-            <select name="carroceria" id="carroceria" class="controls">
-                <option value="0">Tipo de carroceria</option>
-                <option value="1">Turismo</option>
-                <option value="2">SUV y 4X4</option>
-                <option value="3">Monovolumen</option>
-                <option value="4">Familiar</option>
-                <option value="5">Deportivo</option>
-                <option value="6">Cabrio</option>
-                <option value="7">Furgoneta</option>
-                <option value="8">Compacto</option>
-            </select>
-            <select name="transmicion" id="transmision" class="controls">
-                <option value="0">Tipo de transmision</option>
-                <option value="1">Manual</option>
-                <option value="2">Automatica</option>
-            </select>    
-            <select name="combustible" id="combustible" class="controls">
-                <option value="0">Tipo de combustible</option>
-                <option value="1">Nafta</option>
-                <option value="2">Gasoil</option>
-            </select> 
-            <input class="controls" type="text" id="puertas" placeholder="Puertas del automovil">
-            <input class="controls" type="int" name="km" id="km" placeholder="Kilometraje del automovil">
-            <textarea class="controls" name="descripcion" id="" cols="30" rows="10" placeholder="Descripicion del automovil"></textarea>
+        <form action="form.php" method="POST">
+          <div class="auto">
+              <h2> Detalles del automovil</h2>
+              <select name="marca" id="marca" class="controls">
+                  <option value="0">Seleccione la marca del automovil</option>
+                  <option value="1">Audi</option>
+                  <option value="2">Alfa Romeo</option>
+                  <option value="3">BMW</option>
+                  <option value="4">Chevrolet</option>
+                  <option value="5">Citroen</option>
+                  <option value="6">Fiat</option>
+                  <option value="7">Ford</option>
+                  <option value="8">Honda</option>
+                  <option value="9">Hyundai</option>
+                  <option value="10">Jeep</option>
+                  <option value="11">Kia</option>
+                  <option value="12">Mini Cooper</option>
+                  <option value="13">Mitsubishi</option>
+                  <option value="14">Nissan</option>
+                  <option value="15">Peugeot</option>
+                  <option value="16">RAM</option>
+                  <option value="17">Renault</option>
+                  <option value="18">Smart</option>
+                  <option value="19">Suzuki</option>
+                  <option value="20">Toyota</option>
+                  <option value="21">Volkswagen</option>
+                  <option value="22">Volvo</option>
+              </select>
+              <input class="controls" type="text" id="modelo" placeholder="Modelo del automovil" name="modelo">
+              <input class="controls" type="text" id="año" placeholder="Año de fabricacion" name="fabricacion">
+              <select name="carroceria" id="carroceria" class="controls">
+                  <option value="0">Tipo de carroceria</option>
+                  <option value="1">Turismo</option>
+                  <option value="2">SUV y 4X4</option>
+                  <option value="3">Monovolumen</option>
+                  <option value="4">Familiar</option>
+                  <option value="5">Deportivo</option>
+                  <option value="6">Cabrio</option>
+                  <option value="7">Furgoneta</option>
+                  <option value="8">Compacto</option>
+              </select>
+              <select name="transmicion" id="transmision" class="controls">
+                  <option value="0">Tipo de transmision</option>
+                  <option value="1">Manual</option>
+                  <option value="2">Automatica</option>
+              </select>    
+              <select name="combustible" id="combustible" class="controls">
+                  <option value="0">Tipo de combustible</option>
+                  <option value="1">Nafta</option>
+                  <option value="2">Gasoil</option>
+              </select> 
+              <input class="controls" type="text" id="puertas" placeholder="Puertas del automovil" name="puertas">
+              <input class="controls" type="int" name="km" id="km" placeholder="Kilometraje del automovil">
+              <textarea class="controls" name="descripcion" id="" cols="30" rows="10" placeholder="Descripicion del automovil"></textarea>
+  
+          </div>
+          <div class="propietario">
+              <h2>Detalles del propietario</h2>
+              <input class="controls" type="text" id="nombre" placeholder="Ingrese nombre y apellido" name="name">
+              <input class="controls" type="int" id="dni" placeholder="Ingrese DNI" name="dni">
+              <input class="controls" type="int" id="tel" placeholder="Ingrese su numero" name="num">
+              <input class="controls" type="text" id="domicilio" placeholder="Ingrese su domicilio" name="dom">
+              <input class="controls" type="file">
+              <input class="controls" type="submit" value="Publicar Ahora">
+  
+          </div>
 
-        </div>
-        <div class="propietario">
-            <h2>Detalles del propietario</h2>
-            <input class="controls" type="text" id="nombre" placeholder="Ingrese nombre y apellido">
-            <input class="controls" type="int" id="dni" placeholder="Ingrese DNI">
-            <input class="controls" type="int" id="tel" placeholder="Ingrese su numero">
-            <input class="controls" type="text" id="domicilio" placeholder="Ingrese su domicilio">
-            <input class="controls" type="file">
-            <input class="controls" type="submit" value="Publicar Ahora">
-
-        </div>
+        </form>
     </section>
     <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">

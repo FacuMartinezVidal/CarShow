@@ -1,0 +1,10 @@
+<?php
+$nombre=$_POST["name"]
+$tel=$_POST["num"]
+$dni=$_POST["dni"]
+$domicilio=$_POST["dom"]
+$km=$_POST["km"]
+$puertas=$_POST["puertas"]
+$modelo=$_POST["modelo"]
+$fabricacion=$_POST["fabricacion"]
+$email=$_POST["email"]

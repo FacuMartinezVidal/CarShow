@@ -130,7 +130,7 @@ body{
     .form{
         font-family: 'Open Sans', sans-serif;
         width: 600px;
-        background-color: #e9183b;
+        background-color: $colorPrincipal;
         padding: 30px;
         margin: auto;
         margin-top: 100px;
@@ -178,7 +178,7 @@ body{
     .log{
         font-family: 'Open Sans', sans-serif;
         width: 600px;
-        background-color: #e9183b;
+        background-color: $colorPrincipal;
         padding: 30px;
         margin: auto;
         margin-top: 100px;
@@ -287,7 +287,7 @@ body{
         .log{
             font-family: 'Open Sans', sans-serif;
             width: 300px;
-            background-color: #e9183b;
+            background-color: $colorPrincipal;
             padding: 30px;
             margin: auto;
             margin-top: 100px;
@@ -319,7 +319,7 @@ body{
         .form{
             font-family: 'Open Sans', sans-serif;
             width: 300px;
-            background-color: #e9183b;
+            background-color: $colorPrincipal;
             padding: 30px;
             margin: auto;
             margin-top: 100px;
